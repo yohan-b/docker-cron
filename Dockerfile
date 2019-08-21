@@ -4,5 +4,5 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ Europe/Paris
 RUN apt-get update && apt-get -y install cron docker.io
 RUN rm -f /etc/crontab
-ENTRYPOINT ["/usr/sbin/cron", "-f", "-L", "8"]
+ENTRYPOINT ["/usr/sbin/cron", "-f", "-L", "15"]
 #ENTRYPOINT ["/bin/bash"]
